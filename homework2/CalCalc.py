@@ -1,20 +1,18 @@
 # Calculate module
 
+import urllib2
 import argparse
 parser = argparse.ArgumentParser(description='Calculate Stuff')
-parser.add_argument('required_arg_1', help='This positional argument is required')
-parser.add_argument('-s', action='store', dest='simple_value',
-                    help='Store a simple value')
+parser.add_argument('-s', action='store', dest='string',
+                    help='Store a string (equation to calculate)')
 
 results = parser.parse_args()
-print 'required_args    =', results.required_string_1
-print 'simple_value     =', results.simple_value
 
 
 def Calculate(n):
     answer = eval(n)
-    return answer
+    print answer
 
 if __name__ == "__main__":
     import sys
-    Calculate(str(sys.argv[1]))
+    Calculate(str(sys.argv[2]))
