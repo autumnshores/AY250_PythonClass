@@ -13,7 +13,7 @@ def Calculate(n):
         answer = eval(n)
         print answer
     except:
-        print 'Cannot evaluate using eval(). Getting Wolfram Alpha to help...'
+        print 'Cannot calculate using eval(). Getting Wolfram Alpha to help...'
         import urllib2
 
 if __name__ == "__main__":
