@@ -36,4 +36,20 @@ This folder also contains the .ipynb script containing a module, FindNotes, that
 
 FindNotes is also available as a .py script.
 
-Note: This program is currently (as of now) unable to return the actual note name. This is doable by saving a dictionary of note names and frequencies, but the corresponding frequency for each note must have a certain range - they could possibly be integers, and the program will round the peak frequencies to the nearest integer and return its corresponding note name.
+Note: This program is currently (as of now) unable to return the actual note name. This is doable by saving a dictionary of note names and frequencies, but the corresponding frequency for each note must have a certain range - they could possibly be integers, and the program will round the peak frequencies to the nearest integer and return its corresponding note name. For now, the following conversion chart is used: http://www.phy.mtu.edu/~suits/notefreqs.html
+
+Alternatively, since I have perfect pitch, these are the notes that I could hear in the files before starting on the homework (although I got quite confused by some of them because of the harmonics):
+1) C4,D4,G4
+2) F3,F4
+3) A4
+4) C4,C5
+5) G3
+6) C5
+7) D5
+8) F4
+9) G3
+10) C3,G3 (started getting confused from 10 onwards)
+11) E3,B3
+12) C3,C5
+
+I had fun doing this though. :)
