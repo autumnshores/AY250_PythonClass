@@ -1,7 +1,5 @@
-#Find the notes in a given file
-
 import aifc
-%pylab
+%pylab 
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import *
@@ -44,7 +42,7 @@ def FindNotes(filename):
     ax2.plot(freq, abs(spectrum), color="blue", linestyle="-")
     ax2.set_xlabel("Frequency [Hz]")
     ax2.set_ylabel("Power [dB]")
-    ax2.set_xlim(0, 2000)
+    ax2.set_xlim(0, 4000)
     ax2.set_title(plot2_title)
     show()
     
@@ -76,7 +74,6 @@ def FindNotes(filename):
     for j in range(len(b[0])):
         frequencies.append(freqs[b[0][j]+1])
     
-    
     x = sort(frequencies[0:10])
     y = np.diff(x)
     z = np.where(abs(y)>5)
@@ -86,4 +83,12 @@ def FindNotes(filename):
     
     
     print "The major peak frequencies detected are around", majfreq, "Hz"
-    return majfreq
+    
+    thefreqs = []
+    thefreqs.append(majfreq[0])
+    for p in range(1,len(majfreq)-1):
+        if (abs((majfreq[p]/majfreq[0]) - round(majfreq[p]/majfreq[0]))) > 0.1:
+            thefreqs.append(majfreq[p])
+    
+    print "The major peak frequencies that are not harmonics are", thefreqs, "Hz"
+    return thefreqs
