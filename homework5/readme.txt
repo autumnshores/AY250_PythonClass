@@ -34,4 +34,6 @@ This folder also contains the .ipynb script containing a module, FindNotes, that
 -Calculates the major peak frequencies
 -Returns the frequencies that are not harmonics (which should be the notes in the file)
 
+FindNotes is also available as a .py script.
+
 Note: This program is currently (as of now) unable to return the actual note name. This is doable by saving a dictionary of note names and frequencies, but the corresponding frequency for each note must have a certain range - they could possibly be integers, and the program will round the peak frequencies to the nearest integer and return its corresponding note name.
