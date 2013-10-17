@@ -8,4 +8,4 @@ Q4 - I did a simplified version of the correlation where I set KSFO as the refer
 
 Q5 - Trends: The airports near KSFO in the West Coast tend to show the strongest correlations for 1-Day predictions, while the airports in the Mid-West tend to show the strongest correlations for 3-Day predictions. There does not seem to be much visible correlation with the weather conditions at any other city/airport, although that might be a tiny tiny peak near the East Coast. This seems to suggest that the weather conditions "travel" or "sweep" across the United States from West to East coast over a 7 day period.
 
-Oh, Forgot to mention that I calculated "distance" from KSFO by the pythagorean method.
+Oh, Forgot to mention that I calculated "distance" from KSFO using the pythagorean method (sort of differences between Lat and Long coords), probably not the best formula but hopefully it suffices!
