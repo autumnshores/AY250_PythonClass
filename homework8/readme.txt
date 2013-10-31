@@ -14,3 +14,6 @@ imagesearch.py creates a GUI that grabs an image from the internet based on spec
    b) Enhance color - enhances image color by a factor of 2
    c) Shuffle RGB channels - reorders the image array matrix such that RGB becomes GBR
    Each button will also display the generated image (currently in progress) and save the generated image to the folder.
+
+
+Latest update: the figure canvas loads fine, but i am having trouble with the function image_show that displays the image after pulling the URL.
