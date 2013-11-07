@@ -12,4 +12,4 @@ Before running the Parallel section of the notebook, please start 4 engines in t
 
 My computer specs: MacBook Pro with 2.9 GHz Intel Core i7
 
-note: my multiprocessing code seems to be running as if it is doing serial processing. debugging now
+note: multiprocessing and parallel do not seem to be running the way they should be, not sure what is wrong with my code :(
