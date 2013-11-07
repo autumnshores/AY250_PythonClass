@@ -7,6 +7,8 @@ from time import time
 
 #specify number of darts with which to run simulation
 numdarts = [range(10,100), range(100,1000,10), range(1000,10000,100), range(10000,100000,1000), range(100000,1000000,10000), range(1000000,10100000,100000)]
+
+
 #execution time array for plotting
 extime_serial= []
 #simulation rate array for plotting
@@ -87,8 +89,10 @@ simrate_mp = test[0][1]
 
 ### IPython Parallel
 
+from IPython.display import display
 from IPython import parallel
 rc = parallel.Client()
+rc.block = True
 
 def f(numdarts):
     extime_parallel=[]
@@ -120,6 +124,8 @@ def f(numdarts):
             print "Count:", count
     return extime_parallel, simrate_parallel
 
+dview = rc[:]
+divew.block = True
 view = rc.load_balanced_view()
 test2 = view.map(f, [numdarts])
 
