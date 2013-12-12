@@ -12,7 +12,7 @@ iPython Notebook
 - create_spect.py
 
 data files
-- gdat.mat: the file containing the EEG dataset
+- gdat.mat: the file containing the EEG dataset (WARNING: BIG FILE! but it's already the smallest dataset that I have)
 - spkr.mat: the file containing the speaker file that contains a record of the stimuli played during the experiment (musical chords in my case)
 - CP5_passive_block2.xls: the file containing a list of the names of the stimuli in the order that they were played
 
